@@ -93,7 +93,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="523" y="311" name="groups_version">
+<table x="523" y="311" name="groups_manuals">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -104,15 +104,15 @@
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="groups" row="id" />
 </row>
-<row name="id_versions" null="1" autoincrement="0">
+<row name="id_manual" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
-<default>NULL</default><relation table="versions" row="id" />
+<default>NULL</default><relation table="manual" row="id" />
 </row>
 <key type="PRIMARY" name="">
 <part>id</part>
 </key>
 </table>
-<table x="951" y="314" name="manual">
+<table x="761" y="325" name="manual">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -134,7 +134,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="1162" y="437" name="materials">
+<table x="938" y="464" name="materials">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -151,7 +151,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="1155" y="238" name="products">
+<table x="965" y="243" name="products">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -166,21 +166,6 @@
 </row>
 <row name="release_year" null="0" autoincrement="0">
 <datatype>DATE</datatype>
-</row>
-<key type="PRIMARY" name="">
-<part>id</part>
-</key>
-</table>
-<table x="751" y="325" name="versions">
-<row name="id" null="1" autoincrement="1">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<row name="id_manual" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default><relation table="manual" row="id" />
-</row>
-<row name="number" null="0" autoincrement="0">
-<datatype>VARCHAR(50)</datatype>
 </row>
 <key type="PRIMARY" name="">
 <part>id</part>
